@@ -39,6 +39,14 @@ ansible-galaxy install -p roles -r roles/requirements.yml
 ```
 
 ## Requirements
+```
+# set to venv
+$ mkdir .venv -p
+$ /usr/bin/python3 -m venv .venv --upgrade
+$ source .venv/bin/activate
+$ cp requirements.txt requirements-orig.txt
+$ (.venv)python3 -m pip install -U -r requirements.txt
+```
 
 This role requires a FreeBSD, Debian, or Red Hat Enterprise Linux distribution or Windows Server 2012 R2.
 
